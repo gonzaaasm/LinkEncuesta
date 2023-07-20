@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enlace Aleatorio</title>
+  <script>
+    function redirectToRandomLink() {
+      var links = [
+        "https://www.google.cl/?hl=es",
+        "https://es-la.facebook.com/",
+        "https://www.youtube.com/?hl=es-419"
+      ];
+
+      var randomIndex = Math.floor(Math.random() * links.length);
+      window.location.href = links[randomIndex];
+    }
+  </script>
+</head>
+<body>
+  <button onclick="redirectToRandomLink()">Haz clic para abrir un enlace aleatorio</button>
+</body>
+</html>
